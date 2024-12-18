@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Pixel Platformer Turn-Based</title>
+    <link rel="stylesheet" href="assets\css\style.css">
+</head>
+<body>
+    <div class="ui">
+        <h1>Calc Fight Pixel</h1>
+        <p id="status">Player HP: 100 | Enemy HP: 100</p>
+        <button onclick="startTurn()">Mulai</button>
+        <p id="message"></p>
+    </div>
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+    <audio id="backgroundMusic" src="assets\music\backsound.mp3" loop></audio>
+    <audio id="attackSound" src="assets\music\slash.mp3"></audio>
+    <audio id="hitSound" src="assets\music\hit.mp3"></audio>
+
+    <script src="assets\js\script.js"></script>
+</body>
+</html>

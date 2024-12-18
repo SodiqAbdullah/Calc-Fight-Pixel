@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1e1e1e;
+  color: white;
+  font-family: "Press Start 2P", monospace;
+}
+canvas {
+  display: block;
+  margin: auto;
+  /* background: linear-gradient(to bottom, #87CEEB, #1E90FF); */
+  background: url("../images/SF2 & SF2SE - Wasteland Near The Gates_.jpeg") no-repeat
+    center center;
+  background-size: cover;
+}
+.ui {
+  text-align: center;
+  padding: 10px;
+}
+.ui button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #ffd700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: transform 0.2s;
+}
+.ui button:hover {
+  transform: scale(1.1);
+  background-color: #ffc107;
+}
