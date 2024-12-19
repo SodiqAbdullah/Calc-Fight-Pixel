@@ -137,6 +137,20 @@ function startTurn() {
   const { question, answer } = randomQuestion();
   const userAnswer = prompt(`Answer this to attack: ${question}`);
 
+  // Cek jika prompt dibatalkan atau kosong
+  if (userAnswer === null || userAnswer.trim() === "") {
+    document.getElementById("message").textContent =
+      "Action canceled! No attack occurred.";
+    return; // Keluar dari fungsi tanpa menyerang
+  }
+
+  // Validasi input hanya angka
+  if (isNaN(userAnswer)) {
+    document.getElementById("message").textContent =
+      "Invalid input! Please enter a number.";
+    return; // Keluar dari fungsi tanpa menyerang
+  }
+  
   if (parseInt(userAnswer) === answer) {
     animateAttack(player, enemy, false, () => {
       enemy.hp -= 20;
